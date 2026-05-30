@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Escolar Agua de Vida</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="fondo"></div>
+
+<header>
+
+    <div class="logo-box">
+
+        <img src="https://aula.aguadevida.edu.gt/moodle/pluginfile.php/7031/mod_label/intro/LogoADV.png" alt="Logo Colegio">
+
+        <div>
+            <h1>Colegio Cristiano Agua de Vida</h1>
+            <p>Sistema Inteligente de Gestión Escolar</p>
+        </div>
+
+    </div>
+
+    <div class="busqueda">
+
+        <input type="text" id="buscar" placeholder="Buscar alumno">
+
+        <button onclick="buscarAlumno()">
+            Buscar
+        </button>
+
+    </div>
+
+</header>
+
+<section class="panel">
+
+    <h2>Registrar Alumno</h2>
+
+    <div class="grid-form">
+
+        <input type="text" id="clave" placeholder="Clave">
+
+        <input type="text" id="nombre" placeholder="Nombre completo">
+
+        <input type="number" id="edad" placeholder="Edad">
+
+        <select id="grado">
+
+            <option>1ro A</option>
+            <option>1ro B</option>
+            <option>2do A</option>
+            <option>2do B</option>
+            <option>3ro A</option>
+            <option>3ro B</option>
+
+            <option>
+                4to Bachillerato en Computación
+            </option>
+
+            <option>
+                4to Bachillerato en Medicina
+            </option>
+
+            <option>
+                5to Bachillerato en Computación
+            </option>
+
+            <option>
+                5to Bachillerato en Medicina
+            </option>
+
+        </select>
+
+    </div>
+
+    <h2>Materias</h2>
+
+    <div id="materias"></div>
+
+    <div class="botones">
+
+        <button onclick="registrarAlumno()">
+            Guardar Alumno
+        </button>
+
+        <button onclick="mostrarAlumnos()">
+            Mostrar Todos
+        </button>
+
+        <button onclick="eliminarAlumno()">
+            Eliminar Alumno
+        </button>
+
+    </div>
+
+</section>
+
+<section class="panel">
+
+    <h2>Listado de Alumnos</h2>
+
+    <div id="resultado"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
